@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
+  <defs>
+    <!-- Text path for arched text "MADRASAH ALIYAH MIFTAHUL 'ULA" -->
+    <path id="textArc" d="M 120,490 A 420,380 0 0,1 880,490" fill="none" />
+    
+    <!-- Clip path for globe lines inside the semicircle/dome -->
+    <clipPath id="globeClip">
+      <ellipse cx="500" cy="760" rx="125" ry="72" />
+    </clipPath>
+  </defs>
+
+  <!-- 1. Outer Black Border (The Pentagon Shield Outline) -->
+  <path
+    d="M 500,48 L 945,385 L 768,898 Q 500,948 232,898 L 55,385 Z"
+    fill="#000000"
+  />
+
+  <!-- 2. Middle White Outline -->
+  <path
+    d="M 500,68 L 925,388 L 754,882 Q 500,930 246,882 L 75,388 Z"
+    fill="#FFFFFF"
+  />
+
+  <!-- 3. Inner Black Border -->
+  <path
+    d="M 500,86 L 906,392 L 741,867 Q 500,913 259,867 L 94,392 Z"
+    fill="#000000"
+  />
+
+  <!-- 4. Sky Blue Shield Interior -->
+  <path
+    d="M 500,98 L 892,395 L 731,855 Q 500,900 269,855 L 108,395 Z"
+    fill="#81CBFA"
+  />
+
+  <!-- 5. Arched Upper Text "MADRASAH ALIYAH MIFTAHUL 'ULA" -->
+  <text fill="#000000" font-family="'Plus Jakarta Sans', 'Arial Black', Impact, sans-serif" font-weight="900" font-size="52" letter-spacing="4">
+    <textPath href="#textArc" startOffset="50%" text-anchor="middle">
+      MADRASAH ALIYAH MIFTAHUL 'ULA
+    </textPath>
+  </text>
+
+  <!-- 6. White Dome (Kubah) behind minaret and book -->
+  <ellipse cx="500" cy="650" rx="226" ry="175" fill="#FFFFFF" stroke="#000000" stroke-width="14" />
+
+  <!-- 7. White Minaret (Menara) rising to the top -->
+  <!-- Minaret body/shaft -->
+  <path
+    d="M 432,510 L 442,320 Q 444,285 460,270 L 452,270 Q 448,270 448,260 Q 448,245 470,245 L 470,230 Q 470,210 500,210 Q 530,210 530,230 L 530,245 Q 552,245 552,260 Q 552,270 548,270 L 540,270 Q 556,285 558,320 L 568,510 Z"
+    fill="#FFFFFF"
+    stroke="#000000"
+    stroke-width="14"
+    stroke-linejoin="round"
+  />
+
+  <!-- Crescent Moon (Bulan Sabit) at top of the Minaret -->
+  <path
+    d="M 506,234 A 20,20 0 1,1 506,268 A 15,15 0 1,0 506,234 Z"
+    fill="#000000"
+  />
+
+  <!-- 8. Open Book (Kitab Suci / Al-Qur'an) -->
+  <!-- Book Outer Shape (White background with thick black outline) -->
+  <g stroke="#000000" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF">
+    <!-- Left Wing of Book -->
+    <path d="M 500,672 C 455,685 390,688 325,670 C 342,630 380,555 435,528 C 468,512 490,520 500,535 Z" />
+    
+    <!-- Right Wing of Book -->
+    <path d="M 500,672 C 545,685 610,688 675,670 C 658,630 620,555 565,528 C 532,512 510,520 500,535 Z" />
+  </g>
+
+  <!-- Pages Leaves Lines inside Open Book -->
+  <g stroke="#000000" stroke-width="11" stroke-linecap="round" fill="none">
+    <!-- Left Page Inner Curves -->
+    <path d="M 494,545 C 478,534 455,530 428,542 C 388,560 362,605 348,642" />
+    <path d="M 494,570 C 476,558 450,556 422,570 C 392,586 372,618 360,650" />
+    <path d="M 494,595 C 472,585 448,584 416,598 C 394,610 380,632 372,656" />
+
+    <!-- Right Page Inner Curves -->
+    <path d="M 506,545 C 522,534 545,530 572,542 C 612,560 638,605 652,642" />
+    <path d="M 506,570 C 524,558 550,556 578,570 C 608,586 628,618 640,650" />
+    <path d="M 506,595 C 528,585 552,584 584,598 C 606,610 620,632 628,656" />
+
+    <!-- Center Book Spine Line -->
+    <line x1="500" y1="535" x2="500" y2="672" stroke-width="12" />
+  </g>
+
+  <!-- 9. Globe (Bola Dunia) with Grid Lines -->
+  <!-- Globe Base Semicircle -->
+  <path
+    d="M 390,760 C 390,698 440,688 500,688 C 560,688 610,698 610,760 Z"
+    fill="#FFFFFF"
+    stroke="#000000"
+    stroke-width="13"
+  />
+
+  <!-- Globe Grid Lines (Meridians & Parallels) clipped to the dome -->
+  <g clip-path="url(#globeClip)" stroke="#000000" stroke-width="7" fill="none">
+    <!-- Vertical Longitudes (Meridians) -->
+    <line x1="500" y1="680" x2="500" y2="770" stroke-width="8" />
+    <path d="M 500,680 C 470,700 460,735 460,770" />
+    <path d="M 500,680 C 435,705 425,740 425,770" />
+    <path d="M 500,680 C 530,700 540,735 540,770" />
+    <path d="M 500,680 C 565,705 575,740 575,770" />
+
+    <!-- Horizontal Latitudes (Parallels) -->
+    <path d="M 390,735 Q 500,752 610,735" />
+    <path d="M 405,712 Q 500,726 595,712" />
+  </g>
+
+  <!-- 10. Yellow Pedestal / Rehal Stand (Tatakan Berbentuk Sayap Emas) -->
+  <path
+    d="M 218,688 
+       L 782,688 
+       L 775,718 
+       L 688,720 
+       C 645,720 622,745 610,762 
+       L 390,762 
+       C 378,745 355,720 312,720 
+       L 225,718 
+       Z"
+    fill="#FFD200"
+    stroke="#000000"
+    stroke-width="14"
+    stroke-linejoin="round"
+  />
+
+  <!-- 11. Yellow "MAM" Box Banner -->
+  <rect
+    x="295"
+    y="762"
+    width="410"
+    height="96"
+    fill="#FFD200"
+    stroke="#000000"
+    stroke-width="14"
+    stroke-linejoin="round"
+  />
+
+  <!-- 12. "MAM" Typography inside Box -->
+  <text
+    x="500"
+    y="842"
+    text-anchor="middle"
+    fill="#000000"
+    font-family="'Plus Jakarta Sans', 'Arial Black', Impact, sans-serif"
+    font-size="88"
+    font-weight="900"
+    letter-spacing="5"
+  >
+    MAM
+  </text>
+</svg>

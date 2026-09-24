@@ -1,0 +1,7 @@
+{
+  "name": "MA Miftahul 'Ula Kertosono",
+  "description": "Website Resmi Madrasah Aliyah Miftahul 'Ula Nglawak Kertosono Nganjuk. Profil, Visi-Misi, Kurikulum Keagamaan & Umum, Info PPDB Online, Prestasi, dan Galeri.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

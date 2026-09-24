@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  /* Warna Biru Muda Resmi Sesuai Logo MA Miftahul 'Ula (#81CBFA) */
+  --color-sky-50: #f2f9fe;
+  --color-sky-100: #e2f2fd;
+  --color-sky-200: #c5e5fb;
+  --color-sky-300: #a3d7fa;
+  --color-sky-400: #81CBFA; /* Warna Biru Muda Perisai Logo MAM */
+  --color-sky-500: #48aef6;
+  --color-sky-600: #1b8eed;
+  --color-sky-700: #1072d4;
+  --color-sky-800: #125cb0;
+  --color-sky-900: #144e8d;
+  --color-sky-950: #0c2b50;
+
+  /* Token identitas resmi MAM */
+  --color-mam-blue: #81CBFA;
+  --color-mam-blue-dark: #1072d4;
+  --color-mam-blue-light: #e2f2fd;
+  --color-mam-yellow: #FFD200;
+}
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    scroll-behavior: smooth;
+  }
+}
+
+.font-arabic {
+  font-family: 'Amiri', serif;
+}
+
+.font-heading {
+  font-family: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Custom subtle scrollbar with official MAM logo sky blue */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f2f9fe;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #81CBFA;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #48aef6;
+}
+
+/* Light Blue pattern background matching MAM logo */
+.bg-islamic-pattern {
+  background-color: #0c2b50;
+  background-image: radial-gradient(circle at 25px 25px, rgba(129, 203, 250, 0.22) 2%, transparent 0%), radial-gradient(circle at 75px 75px, rgba(129, 203, 250, 0.15) 2%, transparent 0%);
+  background-size: 80px 80px;
+}
+
+/* Print specific styling for PPDB registration card */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-registration-card, #printable-registration-card * {
+    visibility: visible;
+  }
+  #printable-registration-card {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background: white !important;
+    color: black !important;
+  }
+}
+
